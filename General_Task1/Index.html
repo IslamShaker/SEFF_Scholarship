@@ -2,6 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/Style.css">
 </head>
@@ -10,11 +11,16 @@
 
     <!-- this code for the header-part -->
     <div class="header">
-        <img src="" alt="">
-        <div class="home">Home</div>
-        <div class="about">About</div>
-        <div class="product">Product</div>
-        <button class="sign-up">Sign Up</button>
+        <div class="image">
+            <img src="" alt="">
+        </div>
+
+        <div class="tabs">
+            <div class="home">Home</div>
+            <div class="about">About</div>
+            <div class="product">Product</div>
+            <button class="sign-up">Sign Up</button>
+        </div>
     </div>
 
     <!-- this code for the welcome-part -->
@@ -50,36 +56,36 @@
     <!-- this code for the text-part -->
     <div class="text">
         <h2>We’d love to hear from you</h2>
-        <p class="text">Reach out and send us a message</p>
+        <p class="text-par">Reach out and send us a message</p>
     </div>
 
     <!-- this code for form-part -->
     <form class="form">
         <div class="F-name">
-            <label for="Fn">First Name: </label>
-            <input type="text" name="first-name" id="Fn" placeholder="your first name" autofocus>
+            <label for="Fn">First Name: </label> <br>
+            <input type="text" name="first-name" id="Fn" placeholder="your first name">
         </div>
 
         <div class="L-name">
-            <label for="Ln">Last Name: </label>
+            <label for="Ln">Last Name: </label> <br>
             <input type="text" name="last-name" id="Ln" placeholder="your last name">
         </div>
 
         <div class="M-num">
-            <label for="mn">Mobile Number: </label>
+            <label for="mn">Mobile Number: </label> <br>
             <input type="text" name="mobile-num" id="mn" placeholder="+20 111 111 1111">
         </div>
 
         <div class="E-mail">
-            <label for="Em">Email: </label>
+            <label for="Em">Email: </label> <br>
             <input type="email" name="E-mail" id="Em" placeholder="example@gmail.com">
         </div>
 
         <div class="T-area">
-            <label for="Ta">Message: </label>
-            <textarea name="text-area" id="Ta" cols="60" rows="10"></textarea>
+            <label for="Ta">Message: </label> <br>
+            <textarea name="text-area" id="Ta" cols="60" rows="5"></textarea>
         </div>
-        <input type="submit" value="send">
+        <input class="sub-button" type="submit" value="send">
     </form>
 
 </body>
