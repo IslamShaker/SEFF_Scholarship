@@ -2,8 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Eslam Shaker</title>
     <link rel="stylesheet" href="CSS/Style.css">
 </head>
 
@@ -11,56 +10,71 @@
 
     <!-- this code for the header-part -->
     <div class="header">
-        <div class="image">
-            <img src="" alt="">
-        </div>
-
-        <div class="tabs">
-            <div class="home">Home</div>
-            <div class="about">About</div>
-            <div class="product">Product</div>
-            <button class="sign-up">Sign Up</button>
-        </div>
+        <img src="Images/Logo.png" alt="My Logo">
+        <ul class="tabs">
+            <li> <a href="#welcome">Home</a> </li>
+            <li> <a href="#about">About</a> </li>
+            <li><a href="#contact">Contacts</a></li>
+            <li><a href="#opinion">Services</a></li>
+        </ul>
     </div>
 
     <!-- this code for the welcome-part -->
-    <div class="welcome">
-        <img src="" alt="">
-        <h1> Welcome Client! </h1>
-        <p class="welcome-word">Our team is ready to help</p>
+    <div class="welcome" id="welcome">
+        <h1 class="heading"> Welcome Client! </h1>
+        <p class="intro">I'm Eslam Shaker, an undergraduate in the computer science department of the science
+            faculty of Cairo University.</p>
     </div>
 
     <!-- this code for contact-part -->
-    <div class="contact">
-
-        <div class="chat">
-            <h3 class="chat-title">Chat with us</h3>
-            <p class="chat-text">Our friendly team is here to help</p>
-            <span class="chat-contact">inquries@email.com</span>
+    <div class="contact" id="contact">
+        <div class="link">
+            <h3 class="heading">linkedin</h3>
+            <p class="chat-text">contact with me</p>
+            <a class="account" href="https://www.linkedin.com/in/eslam-shaker-278582278/"
+                target="_blank">linkedin-account</a>
         </div>
 
-        <div class="office">
-            <h3 class="office-title">Office</h3>
-            <p class="office-text">Come say hello at our office HQ</p>
-            <span class="office-contact">44 Elmessaha Street Dokki, Giza</span>
+        <div class="git">
+            <h3 class="heading">gitHub</h3>
+            <p class="git-text">follow my work</p>
+            <a class="account" href="https://github.com/IslamShaker" target="_blank">gitHub-account</a>
         </div>
 
         <div class="phone">
-            <h3 class="phone-title">Phone</h3>
-            <p class="phone-text">Mon - Fri 8am to 5pm</p>
-            <span class="phone-contact">+20 11 111 1111</span>
+            <h3 class="heading">Phone</h3>
+            <p class="phone-text">Sun - Fri 10am to 8pm</p>
+            <span class="phone-contact">+20 115-270-4324</span>
         </div>
-
     </div>
 
-    <!-- this code for the text-part -->
-    <div class="text">
-        <h2>We’d love to hear from you</h2>
-        <p class="text-par">Reach out and send us a message</p>
+    <!-- this code for the about-part -->
+    <div class="about" id="about">
+        <div class="technical">
+            <h2 class="heading">technical skills: </h2>
+            <ul>
+                <li>core java programming</li>
+                <li>HTML, CSS</li>
+                <li>microsoft office</li>
+                <li>photo and video editing using photoshop and adobe premiere</li>
+            </ul>
+        </div>
+
+        <div class="conceptual">
+            <h2 class="heading">conceptual skills: </h2>
+            <ul>
+                <li>object oriented programming (OOP) </li>
+                <li>data Structure and algorithms</li>
+                <li>problem solving</li>
+                <li>communication skills</li>
+                <li>leadership skills</li>
+            </ul>
+        </div>
     </div>
 
     <!-- this code for form-part -->
-    <form class="form">
+    <h2 class="form-title">For any Service!</h2>
+    <form class="form" id="opinion">
         <div class="F-name">
             <label for="Fn">First Name: </label> <br>
             <input type="text" name="first-name" id="Fn" placeholder="your first name">
@@ -73,7 +87,7 @@
 
         <div class="M-num">
             <label for="mn">Mobile Number: </label> <br>
-            <input type="text" name="mobile-num" id="mn" placeholder="+20 111 111 1111">
+            <input type="tel" name="mobile-num" id="mn" placeholder="123-456-7890">
         </div>
 
         <div class="E-mail">
@@ -85,7 +99,7 @@
             <label for="Ta">Message: </label> <br>
             <textarea name="text-area" id="Ta" cols="60" rows="5"></textarea>
         </div>
-        <input class="sub-button" type="submit" value="send">
+        <button class="sub-button"> Send </button>
     </form>
 
 </body>
